@@ -107,7 +107,7 @@ namespace StarSimulation {
 
         private void ConsumeStar(Star predator, Star prey) {
             double growthAmount = prey.Size * GrowthFactor;
-            predator.Size += growthAmount;
+            predator.Size += 0.2;
             predator.Shape.Width = predator.Size;
             predator.Shape.Height = predator.Size;
             StarCanvas.Children.Remove(prey.Shape);
